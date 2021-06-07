@@ -1,0 +1,18 @@
+{
+  "name": "hw2",
+  "script": "server.js",
+  "log_file": "logs/combined.log",
+  "autorestart": true,
+  "watch": true,
+  "watch_delay": 100,
+  "max_restarts": 30,
+  "restart_delay": 3000,
+  "ignore_watch": ["node_modules", "logs", ".git", "mysql"],
+  "max_memory_restart": "900M",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "env_production" : {
+    "NODE_ENV": "production"
+  }
+}
